@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<slope &le; 1.5<br/>gini = 0.494<br/>samples = 146<br/>value = [131, 106]<br/>class = No Disease>, fillcolor="#fae7d9"] ;
+1 [label=<cp &le; 3.5<br/>gini = 0.388<br/>samples = 68<br/>value = [84, 30]<br/>class = No Disease>, fillcolor="#eeae80"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<age &le; 53.5<br/>gini = 0.14<br/>samples = 41<br/>value = [61, 5]<br/>class = No Disease>, fillcolor="#e78b49"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 22<br/>value = [35, 0]<br/>class = No Disease>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<gini = 0.271<br/>samples = 19<br/>value = [26, 5]<br/>class = No Disease>, fillcolor="#ea995f"] ;
+2 -> 4 ;
+5 [label=<ca &le; 0.5<br/>gini = 0.499<br/>samples = 27<br/>value = [23, 25]<br/>class = Disease>, fillcolor="#eff7fd"] ;
+1 -> 5 ;
+6 [label=<gini = 0.293<br/>samples = 15<br/>value = [23, 5]<br/>class = No Disease>, fillcolor="#eb9c64"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 12<br/>value = [0, 20]<br/>class = Disease>, fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label=<thal &le; 6.5<br/>gini = 0.472<br/>samples = 78<br/>value = [47, 76]<br/>class = Disease>, fillcolor="#b3daf5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<ca &le; 0.5<br/>gini = 0.429<br/>samples = 39<br/>value = [42, 19]<br/>class = No Disease>, fillcolor="#f1ba93"] ;
+8 -> 9 ;
+10 [label=<gini = 0.283<br/>samples = 27<br/>value = [34.0, 7.0]<br/>class = No Disease>, fillcolor="#ea9b62"] ;
+9 -> 10 ;
+11 [label=<gini = 0.48<br/>samples = 12<br/>value = [8, 12]<br/>class = Disease>, fillcolor="#bddef6"] ;
+9 -> 11 ;
+12 [label=<chol &le; 485.5<br/>gini = 0.148<br/>samples = 39<br/>value = [5, 57]<br/>class = Disease>, fillcolor="#4aa6e7"] ;
+8 -> 12 ;
+13 [label=<gini = 0.095<br/>samples = 38<br/>value = [3, 57]<br/>class = Disease>, fillcolor="#43a2e6"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 1<br/>value = [2, 0]<br/>class = No Disease>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}

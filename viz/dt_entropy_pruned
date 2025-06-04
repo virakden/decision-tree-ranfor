@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<ca &le; 0.5<br/>entropy = 0.998<br/>samples = 237<br/>value = [124.0, 113.0]<br/>class = No Disease>, fillcolor="#fdf4ed"] ;
+1 [label=<thal &le; 6.5<br/>entropy = 0.825<br/>samples = 139<br/>value = [103.0, 36.0]<br/>class = No Disease>, fillcolor="#eead7e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<thalach &le; 160.5<br/>entropy = 0.588<br/>samples = 99<br/>value = [85, 14]<br/>class = No Disease>, fillcolor="#e9965a"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.804<br/>samples = 53<br/>value = [40, 13]<br/>class = No Disease>, fillcolor="#edaa79"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.151<br/>samples = 46<br/>value = [45, 1]<br/>class = No Disease>, fillcolor="#e6843d"] ;
+2 -> 4 ;
+5 [label=<cp &le; 3.5<br/>entropy = 0.993<br/>samples = 40<br/>value = [18, 22]<br/>class = Disease>, fillcolor="#dbedfa"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.881<br/>samples = 20<br/>value = [14, 6]<br/>class = No Disease>, fillcolor="#f0b78e"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.722<br/>samples = 20<br/>value = [4, 16]<br/>class = Disease>, fillcolor="#6ab6ec"] ;
+5 -> 7 ;
+8 [label=<cp &le; 3.5<br/>entropy = 0.75<br/>samples = 98<br/>value = [21, 77]<br/>class = Disease>, fillcolor="#6fb8ec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<entropy = 1.0<br/>samples = 34<br/>value = [17, 17]<br/>class = No Disease>, fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.337<br/>samples = 64<br/>value = [4, 60]<br/>class = Disease>, fillcolor="#46a4e7"] ;
+8 -> 10 ;
+}
